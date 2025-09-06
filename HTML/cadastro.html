@@ -6,33 +6,32 @@
   <title>Alumiar - Cadastro</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="cadastro.css">
-  <script src="cadastro.js" defer></script>
+  <link rel="stylesheet" href="../Assets/CSS/cadastro.css">
 </head>
 <body>
- 
-  <a href="../login/index.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
-
+  
+  <a href="login.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+  
   <div class="container">
     
     <h1 class="title">Como deseja se cadastrar?</h1>
-
-  
-    <div class="option-buttons">
     
-      <button class="option-btn" data-target="../psicologo/psicologo.html">
+    
+    <div class="option-buttons">
+      
+      <a id="Psi-button" class="redirect-btn" href="psicologo.html">
         <i class="fas fa-user-md" style="color: black;"></i> Psicólogo
-      </button>
-
-      <button class="option-btn" data-target="../estudante/estudante.html">
+      </a>
+      
+      <a id="Est-button" class="redirect-btn" href="estudante.html">
         <i class="fas fa-graduation-cap" style="color: black;"></i> Estudante de Psicologia
-      </button>
-
-     
-      <button class="option-btn" data-target="../paciente/paciente.html">
+      </a>
+      
+      <a id="Pacient-button" class="redirect-btn" href="paciente.html">
         <i class="fas fa-user" style="color: black;"></i> Paciente
-      </button>
+      </a>
     </div>
   </div>
+  <script src="../Assets/JavaScript/cadastro.js" defer></script>
 </body>
 </html>

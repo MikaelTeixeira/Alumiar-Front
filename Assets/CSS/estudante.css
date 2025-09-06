@@ -8,7 +8,7 @@ body {
   align-items: center;
 
   
-  background: url("cadastro.svg") no-repeat center center fixed;
+  background: url("../IMGs/cadastro.svg") no-repeat center center fixed;
   background-size: cover;
   color: white;
 }
