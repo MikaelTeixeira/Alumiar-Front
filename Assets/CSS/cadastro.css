@@ -9,6 +9,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../IMGs/cadastro.svg') no-repeat center;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -16,24 +17,29 @@ body {
     position: relative;
 }
 
-.back-arrow {
+#back-button-line{
+
+    display: flex;
     position: absolute;
-    top: 30px;
-    left: 30px;
-    font-size: 28px;
-    color: #ffffff;
-    text-decoration: none;
-    z-index: 10;
-    transition: color 0.3s ease, transform 0.2s ease;
-    padding: 5px 10px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.2);
+    align-items: start;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 100px;
 }
 
-.back-arrow:hover {
-    color: #e0e0e0;
-    transform: scale(1.1);
-    background: rgba(0, 0, 0, 0.3);
+#back-button{
+  width: 70px;
+  height: 70px;
+  background-image: url("../IMGs/Back-button.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out; 
+}
+
+#back-button:hover {
+  transform: scale(1.2); 
 }
 
 .container {

@@ -16,8 +16,8 @@ body {
 
 .container {
     display: flex;
-    width: 900px;
-    height: 500px;
+    width: 1500px;
+    height: 830px;
     background-color: #ffffff;
     border-radius: 15px;
     overflow: hidden;
@@ -52,14 +52,14 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-.description {
+#description {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 25px;
     color: #666666;
     line-height: 1.8;
     margin-top: 15px;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .illustration {
@@ -101,8 +101,11 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
+
+
 .input-icon {
     width: 40px;
+    margin-left: 1vh;
     height: 40px;
     background-color: #ffffff;
     border-radius: 50%;
@@ -113,9 +116,9 @@ body {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.input-icon i {
-    color: #007bff;
-    font-size: 16px;
+.input-iconson{
+    width: max-content;
+    height: max-content;
 }
 
 .input-field {

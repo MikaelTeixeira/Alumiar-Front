@@ -3,46 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro</title>
-  <link rel="stylesheet" href="../Assets/CSS/psicologo.css">
+  <title>Alumiar</title>
+  <link rel="stylesheet" href="../Assets/CSS/estudante.css">
 </head>
 <body>
   <div class="container">
     
-    <a href="../cadastro/cadastro.html" class="back-btn">←</a>
+    <a id="back-button" href="cadastro.html" class="back-btn"></a>
 
-    <form class="form-cadastro">
-      <div class="input-left">
-        <input type="text" placeholder="Digite seu nome completo">
-        <input type="email" placeholder="Digite seu e-mail">
-        <input type="password" placeholder="Digite sua senha">
-        <input type="text" placeholder="Digite seu CPF">
-        <input type="date" placeholder="Digite sua data de nascimento">
-      </div>
-
-      <div class="input-right">
-        <input type="text" placeholder="Digite seu número de CRP">
+    <form id="form-cadastro">
+      
+      <div id="input-left">
         
-        <label class="file-upload">
-          <input type="file" hidden>
-          📎 Anexe seu currículo
-        </label>
+        <div class="input-place">
+          <input type="text" id="Name-input" class="input">
+          <small class="input-indicator">Digite seu nome completo</small>
+        </div>
 
-        <label class="file-upload">
-          <input type="file" hidden>
-          📎 Anexe algum documento com foto
-        </label>
-
-        <label class="file-upload">
-          <input type="file" hidden>
-          📎 Anexe a foto de perfil
-        </label>
+      <div class="input-place">
+        <input type="email" id="Email-input" class="input">
+        <small class="input-indicator">Digite seu e-mail</small>
       </div>
 
-      <button type="submit" class="btn-registrar">REGISTRAR</button>
+      <div class="input-place">
+        <input type="password" id="Password-input" class="input">
+        <small class="input-indicator">Digite sua senha</small>
+      </div>
+
+      <div class="input-place">
+        <input type="text" id="CPF-input" class="input">
+        <small class="input-indicator">Digite seu CPF</small>
+      </div>
+
+      <div class="input-place">
+        <input type="date" id="Birthdate-input" class="input" placeholder="dd/mm/aaaa">
+        <small class="input-indicator">Digite sua data de nascimento</small>
+      </div>
+
+      
+      </div>
+
+      <div id="input-right">
+        
+        <div id="upper-input">
+
+          <div id="crp-supervisor-input"class="input-place">
+          
+            <input type="text" id="supervisor-crp" class="input">
+
+            <div id="indicator-box"> <!-- UTILIZEI PRA QUESTÃO ESTÉTICA EM DEIXAR O TEXTO COMEÇANDO NO INÍCIO DO BOTÃO, MESMO QUE O BOTÃO ESTEJA CENTRALIZADO -->
+              <small class="input-indicator">Digite seu N° de CRP</small>
+            </div>
+          
+          </div>
+          
+          
+        </div>
+        <div id="middle-inputs">
+
+          <div id="curriculum-input" class="file-input">
+
+            <label id="curriculum" class="file-upload">
+              <img class="Paperclip-img" src="../Assets/IMGs/Paperclip.svg" alt="Paperclip-img">
+              <input type="file" hidden>
+            </label>
+            <small class="file-upload-indicator">Anexe seu currículo</small>
+
+          </div>
+          
+          <div id="doc-with-pic-place" class="file-input">
+            <label id="doc-with-pic" class="file-upload">
+              <img class="Paperclip-img" src="../Assets/IMGs/Paperclip.svg" alt="Paperclip-img">
+              <input type="file" hidden>
+            </label>
+            <small class="file-upload-indicator">Anexe algum documento com foto</small>
+          </div>
+        
+        </div>
+        
+        <div id="lower-input">
+          <label id="profile-photo" class="file-upload">
+            <img class="Paperclip-img" src="../Assets/IMGs/Paperclip.svg" alt="Paperclip-img">
+            <input type="file" hidden>
+          </label>
+          <small class="file-upload-indicator">Anexe a foto de perfil</small>
+        </div>
+
+        <button id="register-button" type="submit">REGISTRAR</button>
+      
+      </div>
     </form>
   </div>
 
-  <script src="../Assets/JavaScript/psicologo.js"></script>
+  <script src="../Assets/JavaScript/estudante.js"></script>
 </body>
 </html>
