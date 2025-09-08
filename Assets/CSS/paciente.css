@@ -6,7 +6,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: url("../IMGs/cadastro.svg") no-repeat center center fixed;
   background-size: cover;
   color: white;
@@ -20,7 +19,6 @@ body {
   position: relative;
 }
 
-/* Botão voltar */
 #back-button {
   width: 60px;
   height: 60px;
@@ -35,7 +33,6 @@ body {
   transform: scale(1.15);
 }
 
-/* Formulário */
 #form-cadastro {
   display: flex;
   justify-content: space-between;
@@ -54,7 +51,6 @@ body {
   gap: 20px;
 }
 
-/* Campos */
 .input-place {
   display: flex;
   flex-direction: column;
@@ -82,7 +78,6 @@ body {
   margin-left: 5px;
 }
 
-/* Data */
 #Birthdate-input {
   font-size: 16px;
   text-align: center;
@@ -93,14 +88,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: scale(1.5);
 }
 
-/* Supervisor CRP */
 #indicator-box {
   width: 100%;
   max-width: 380px;
   text-align: start;
 }
 
-/* Upload alinhado */
 .file-input {
   display: flex;
   flex-direction: column;
@@ -135,7 +128,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-top: 8px;
 }
 
-/* Botão registrar */
 #register-button {
   margin-top: 40px;
   width: 100%;
@@ -155,84 +147,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: scale(1.08);
 }
 
-/* ===================== */
-/* RESPONSIVIDADE */
-/* ===================== */
-
-/* Notebooks médios */
 @media (max-width: 1366px) {
   .container {
     max-width: 950px;
   }
   .input {
     max-width: 320px;
-  }
-}
-
-/* Tablets */
-@media (max-width: 1024px) {
-  #form-cadastro {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #input-left,
-  #input-right {
-    width: 100%;
-  }
-
-  .input {
-    max-width: 100%;
-  }
-
-  #register-button {
-    font-size: 20px;
-    padding: 16px;
-  }
-}
-
-/* Celulares */
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
-
-  #back-button {
-    width: 50px;
-    height: 50px;
-  }
-
-  .input {
-    font-size: 15px;
-    padding: 12px;
-  }
-
-  #register-button {
-    max-width: 100%;
-    font-size: 18px;
-    padding: 14px;
-  }
-}
-
-/* Celulares pequenos */
-@media (max-width: 480px) {
-  #form-cadastro {
-    margin-top: 30px;
-    padding: 10px;
-  }
-
-  .input {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  #register-button {
-    font-size: 16px;
-    padding: 12px;
-  }
-
-  .Paperclip-img {
-    width: 60px;
-    height: 30px;
   }
 }
