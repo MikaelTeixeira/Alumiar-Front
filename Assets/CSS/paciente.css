@@ -2,12 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  
   background: url("../IMGs/cadastro.svg") no-repeat center center fixed;
   background-size: cover;
   color: white;
@@ -16,193 +15,224 @@ body {
 .container {
   width: 90%;
   max-width: 1200px;
-  height: 100%;
-  max-height: 900px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-#back-button{
-  width: 70px;
-  height: 70px;
+/* Botão voltar */
+#back-button {
+  width: 60px;
+  height: 60px;
   background-image: url("../IMGs/Back-button.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
 }
 
 #back-button:hover {
-  transform: scale(1.2); 
+  transform: scale(1.15);
 }
 
-
+/* Formulário */
 #form-cadastro {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  margin-top: 80px;
-  padding: 25px;
-  height: 500px;
+  gap: 20px;
+  margin-top: 60px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
-#input-left{
+#input-left,
+#input-right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
-  height: 600px;
+  width: 48%;
+  gap: 20px;
 }
 
-#Birthdate-input{
-  margin-bottom: 45px;
-  font-size: 20px;
-  text-align: center;
-  padding-right: 0px;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  margin-right: 35px;
-  transform: scale(2);  
-} 
-
-
-#input-right{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 50%;
-  height: 600px;
-}
-
-.input-place{
+/* Campos */
+.input-place {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 150px;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
-#upper-input{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+.input {
   width: 100%;
-  height: 150px;
-}
-
-#crp-supervisor-input{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: start;
-}
-
-#indicator-box{
-  width: 380px;
-  height: 25px;
-  text-align: start;
-}
-
-#lower-input{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  align-content: center;
-
-  width: 100%;
-  height: 100px;
-  margin-top: 95px;
-}
-
-.input{
-  width: 375px;
-  height: 70px;
+  max-width: 380px;
+  padding: 15px;
   border-radius: 15px;
-  border: 3px solid black;
-  margin: 0px;
-  padding: 0px;
-
+  border: 2px solid black;
   transition: all 0.3s ease-in-out;
+  font-size: 16px;
 }
 
-.input:hover{
+.input:hover {
   transform: scale(1.02);
 }
 
-.input-indicator{
+.input-indicator {
   font-style: italic;
-  font-size: large;
-  margin-left: 10px;
-  margin-top: 5px;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-left: 5px;
 }
 
+/* Data */
+#Birthdate-input {
+  font-size: 16px;
+  text-align: center;
+}
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  margin-right: 10px;
+  transform: scale(1.5);
+}
 
-.file-upload {
+/* Supervisor CRP */
+#indicator-box {
+  width: 100%;
+  max-width: 380px;
+  text-align: start;
+}
 
+/* Upload alinhado */
+.file-input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  cursor: pointer;
-  color: lightgray;
-  font-size: 14px;
-  width: 50px;
-  margin-top: 200px;
+  margin-top: 30px;
 }
 
-.Paperclip-img{
-  margin-left: 275px;
-  width: 100px;
-  height: 50px;
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
 
+.Paperclip-img {
+  width: 80px;
+  height: 40px;
   transition: all 0.3s ease-in-out;
 }
 
-.Paperclip-img:hover{
-  transform: scale(1.2);
+.Paperclip-img:hover {
+  transform: scale(1.15);
 }
 
-.file-input{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-}
-
-#file-upload-indicator{
+#file-upload-indicator {
   text-align: center;
-  width: 330px;
-  font-style: normal;
-  font-weight: bolder;
-  margin-top: 6px;
+  max-width: 320px;
+  font-weight: bold;
+  margin-top: 8px;
 }
 
+/* Botão registrar */
 #register-button {
-  margin-left: 15px;
-  margin-top: 150px;
-  width: 300px;
-  height: 80px;
-  font-size: 35px;
-  font-weight: bolder;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 320px;
+  padding: 18px;
+  font-size: 22px;
+  font-weight: bold;
   border: none;
   border-radius: 10px;
   background: #1E90FF;
   color: white;
   cursor: pointer;
-
   transition: all 0.3s ease-in-out;
 }
 
 #register-button:hover {
-  transform: scale(1.2);
+  transform: scale(1.08);
+}
+
+/* ===================== */
+/* RESPONSIVIDADE */
+/* ===================== */
+
+/* Notebooks médios */
+@media (max-width: 1366px) {
+  .container {
+    max-width: 950px;
+  }
+  .input {
+    max-width: 320px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  #form-cadastro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #input-left,
+  #input-right {
+    width: 100%;
+  }
+
+  .input {
+    max-width: 100%;
+  }
+
+  #register-button {
+    font-size: 20px;
+    padding: 16px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  #back-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .input {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  #register-button {
+    max-width: 100%;
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  #form-cadastro {
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #register-button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .Paperclip-img {
+    width: 60px;
+    height: 30px;
+  }
 }
